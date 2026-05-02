@@ -1,6 +1,4 @@
 class Solution {
-    static ArrayList<Integer> arr = new ArrayList<>();
-
     private boolean isvalid(int n) {
         boolean valid = false;
         while (n > 0) {
@@ -18,7 +16,6 @@ class Solution {
 
     public int rotatedDigits(int n) {
         int count = 0;
-
         for (int i = 1; i <= n; i++) {
             if (isvalid(i)) {
                 count++;
